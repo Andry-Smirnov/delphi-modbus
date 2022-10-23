@@ -1,0 +1,3 @@
+[submodule "usercontrol_lazarus"]
+	path = usercontrol_lazarus
+	url = https://github.com/Andry-Smirnov/usercontrol_lazarus.git
