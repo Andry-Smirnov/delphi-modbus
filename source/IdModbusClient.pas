@@ -29,15 +29,15 @@ unit IdModBusClient;
 interface
 
 uses
-  Classes
- ,SysUtils
- ,ModBusConsts
- ,ModbusTypes
+  Classes,
+  SysUtils,
+  ModBusConsts,
+  ModbusTypes,
 {$IFDEF DMB_DELPHI6}
- ,Types
+  Types,
 {$ENDIF}
- ,IdGlobal
- ,IdTCPClient;
+  IdGlobal,
+  IdTCPClient;
 
 type
   TModBusClientErrorEvent = procedure(const FunctionCode: Byte;
