@@ -11,3 +11,4 @@ Release/
 Debug/
 *.stat
 .DS_Store
+usercontrol_lazarus/
