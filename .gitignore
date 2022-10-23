@@ -10,3 +10,4 @@ __history/
 Release/
 Debug/
 *.stat
+.DS_Store
