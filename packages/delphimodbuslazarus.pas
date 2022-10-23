@@ -4,19 +4,32 @@
 
 unit delphimodbuslazarus; 
 
+
 interface
 
+
 uses
-    IdModbusClient, ModbusUtils, ModbusTypes, ModbusStrConsts, ModbusConsts, 
-  IdModbusServer, ModbusReg, LazarusPackageIntf;
+  IdModbusClient,
+  ModbusUtils,
+  ModbusTypes,
+  ModbusStrConsts,
+  ModbusConsts,
+  IdModbusServer,
+  ModbusReg,
+  LazarusPackageIntf;
+
 
 implementation
+
 
 procedure Register; 
 begin
   RegisterUnit('ModbusReg', @ModbusReg.Register); 
 end; 
 
+
 initialization
   RegisterPackage('DelphiModbusLazarus', @Register); 
+
+
 end.
