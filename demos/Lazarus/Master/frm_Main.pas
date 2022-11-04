@@ -15,6 +15,7 @@ type
   TfrmMain = class(TForm)
     btnRead: TButton;
     btnWrite: TButton;
+    edtIPPort: TEdit;
     edtReadAmount: TEdit;
     edtValue: TEdit;
     edtReadReg: TEdit;
@@ -54,22 +55,22 @@ var
 begin
   iAmount := StrToInt(edtReadAmount.Text);
   if (iAmount > 0) then
-  begin
-    mctPLC.Host := edtIPAddress.Text;
-    if mctPLC.ReadHoldingRegisters(StrToInt(edtReadReg.Text), iAmount, Data) then
     begin
-      sLine := 'Register value(s) read:';
-      for i := 0 to (iAmount - 1) do
-        sLine := sLine +
-                 #13#10'     ' +
-                 IntToStr(StrToInt(edtReadReg.Text) + i) +
-                 ': 0x'  +
-                 IntToHex(Data[i], 4);
-      ShowMessage(sLine);
-    end
-    else
-      ShowMessage('PLC read operation failed!');
-  end;
+      mctPLC.Host := edtIPAddress.Text;
+      if mctPLC.ReadHoldingRegisters(StrToInt(edtReadReg.Text), iAmount, Data) then
+        begin
+          sLine := 'Register value(s) read:';
+          for i := 0 to (iAmount - 1) do
+            sLine := sLine +
+                     #13#10'     ' +
+                     IntToStr(StrToInt(edtReadReg.Text) + i) +
+                     ': 0x'  +
+                     IntToHex(Data[i], 4);
+          ShowMessage(sLine);
+        end
+      else
+        ShowMessage('PLC read operation failed!');
+    end;
 end;
 
 

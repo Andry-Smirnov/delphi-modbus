@@ -34,25 +34,25 @@ procedure Register;
 implementation
 
 uses
-  Classes
+  Classes,
 {$IFDEF DMB_DELPHI6}
- ,DesignIntf
+  DesignIntf,
 {$ELSE}
-{$IFDEF FPC}
- ,LazarusPackageIntf
-{$ELSE}
- ,DsgnIntf
+  {$IFDEF FPC}
+  LazarusPackageIntf,
+  {$ELSE}
+  DsgnIntf,
+  {$ENDIF}
 {$ENDIF}
-{$ENDIF}
- ,IdModbusClient
- ,IdModbusServer
+  IdModbusClient,
+  IdModbusServer,
 {$IFNDEF FPC}
-{$IFDEF DMB_DELPHI2005}
- ,ModbusSplash
+  {$IFDEF DMB_DELPHI2005}
+  ModbusSplash,
+  {$ENDIF}
+  AboutComponentEditor,
 {$ENDIF}
- ,AboutComponentEditor
-{$ENDIF}
- ,ModbusStrConsts;
+  ModbusStrConsts;
 
 
 procedure Register;

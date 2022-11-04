@@ -8,8 +8,8 @@ unit DelphiModbusLazarus;
 interface
 
 uses
-  IdModbusClient, ModbusUtils, ModbusTypes, ModbusStrConsts, ModbusConsts, 
-  IdModbusServer, ModbusReg, LazarusPackageIntf;
+  IdModBusClient, ModbusUtils, ModbusTypes, ModbusStrConsts, ModbusConsts, 
+  IdModBusServer, ModbusReg, LazarusPackageIntf;
 
 implementation
 

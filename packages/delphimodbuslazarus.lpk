@@ -23,33 +23,33 @@
     <Version Major="1" Minor="4"/>
     <Files Count="7">
       <Item1>
-        <Filename Value="..\source\IdModbusClient.pas"/>
-        <UnitName Value="IdModbusClient"/>
+        <Filename Value="..\source\idmodbusclient.pas"/>
+        <UnitName Value="idmodbusclient"/>
       </Item1>
       <Item2>
-        <Filename Value="..\source\ModbusUtils.pas"/>
-        <UnitName Value="ModbusUtils"/>
+        <Filename Value="..\source\modbusutils.pas"/>
+        <UnitName Value="modbusutils"/>
       </Item2>
       <Item3>
-        <Filename Value="..\source\ModbusTypes.pas"/>
-        <UnitName Value="ModbusTypes"/>
+        <Filename Value="..\source\modbustypes.pas"/>
+        <UnitName Value="modbustypes"/>
       </Item3>
       <Item4>
-        <Filename Value="..\source\ModbusStrConsts.pas"/>
-        <UnitName Value="ModbusStrConsts"/>
+        <Filename Value="..\source\modbusstrconsts.pas"/>
+        <UnitName Value="modbusstrconsts"/>
       </Item4>
       <Item5>
-        <Filename Value="..\source\ModbusConsts.pas"/>
-        <UnitName Value="ModbusConsts"/>
+        <Filename Value="..\source\modbusconsts.pas"/>
+        <UnitName Value="modbusconsts"/>
       </Item5>
       <Item6>
-        <Filename Value="..\source\IdModbusServer.pas"/>
-        <UnitName Value="IdModbusServer"/>
+        <Filename Value="..\source\idmodbusserver.pas"/>
+        <UnitName Value="idmodbusserver"/>
       </Item6>
       <Item7>
-        <Filename Value="..\source\ModbusReg.pas"/>
+        <Filename Value="..\source\modbusreg.pas"/>
         <HasRegisterProc Value="True"/>
-        <UnitName Value="ModbusReg"/>
+        <UnitName Value="modbusreg"/>
       </Item7>
     </Files>
     <CompatibilityMode Value="True"/>
